@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package watcher;
+
+option go_package = "github.com/RomanIkonnikov93/niisva";
+
+import "google/protobuf/empty.proto";
+
+service Watcher {
+  rpc AddUserRemoteDirectoryPath(Record) returns (google.protobuf.Empty);
+}
+
+message Record {
+  string path = 1;
+}
+
+
+
+
+
+
+
+
+
